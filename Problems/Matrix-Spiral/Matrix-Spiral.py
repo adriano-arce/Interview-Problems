@@ -51,5 +51,7 @@ if __name__ == "__main__":
          [11, 16, 15,  6],
          [10,  9,  8,  7]]
     ]
-    for A in testMatrices:
+    for i in range(len(testMatrices)):
+        A = testMatrices[i]
+        print(str.format("Test Matrix #{0}:", i + 1))
         matrixSpiral(A, len(A), len(A[0]))
