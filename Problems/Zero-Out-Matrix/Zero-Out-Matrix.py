@@ -11,16 +11,15 @@ def zeroOutMatrix(A, m, n):
     # Pass 1: Search for zeroes, without modifying A yet.
     for row in range(m):
         for col in range(n):
-            isZero = A[row][col] == 0
-            rowHasZero[row] = rowHasZero[row] or isZero
-            colHasZero[col] = colHasZero[col] or isZero
+            if A[row][col] == 0:
+                rowHasZero[row] = True
+                colHasZero[col] = True
 
     # Pass 2: Zero out the appropriate rows/cols.
     for row in range(m):
         for col in range(n):
             if rowHasZero[row] or colHasZero[col]:
                 A[row][col] = 0
-    return A
 
 if __name__ == "__main__":
     testMatrices = [
@@ -38,6 +37,6 @@ if __name__ == "__main__":
     ]
     for i in range(len(testMatrices)):
         A = testMatrices[i]
-        zeroedOut = zeroOutMatrix(A, len(A), len(A[0]))
+        zeroOutMatrix(A, len(A), len(A[0]))
         print(str.format("Test Matrix #{0}:", i + 1))
-        print("\n".join(map(str, zeroedOut)))
+        print("\n".join(map(str, A)))
