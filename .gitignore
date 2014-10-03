@@ -1,2 +1,6 @@
+# Build folders.
 bin/
 obj/
+
+# User-specific files.
+*.suo
