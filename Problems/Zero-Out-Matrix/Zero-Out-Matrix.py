@@ -35,8 +35,7 @@ if __name__ == "__main__":
          [2, 3, 8, 5, 3],
          [9, 8, 7, 6, 5]],
     ]
-    for i in range(len(testMatrices)):
-        A = testMatrices[i]
+    for (index, A) in enumerate(testMatrices):
         zeroOutMatrix(A, len(A), len(A[0]))
-        print(str.format("Test Matrix #{0}:", i + 1))
+        print(str.format("Test Matrix #{0}:", index + 1))
         print("\n".join(map(str, A)))
