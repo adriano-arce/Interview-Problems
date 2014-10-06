@@ -1,15 +1,16 @@
 ﻿using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Is-Palindrome-Solution")]
+[assembly: AssemblyTitle("Zero-Out-Matrix-Solution")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Is-Palindrome-Solution")]
-[assembly: AssemblyCopyright("Copyright © 2014")]
+[assembly: AssemblyCompany("Sage")]
+[assembly: AssemblyProduct("Zero-Out-Matrix-Solution")]
+[assembly: AssemblyCopyright("Copyright © Sage 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -19,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("931b58b5-66f2-4ebc-8cbd-a189544fef0d")]
+[assembly: Guid("444ad391-b4ba-4b03-8396-41fe102a5c6d")]
 
 // Version information for an assembly consists of the following four values:
 //

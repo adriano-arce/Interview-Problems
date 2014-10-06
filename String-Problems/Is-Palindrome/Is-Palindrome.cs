@@ -43,6 +43,9 @@ public class IsPalindromeSolution
         return "'" + s.Replace("\n", @"\n").Replace("\t", @"\t") + "'";
     }
 
+    /// <summary>
+    /// The entry point.
+    /// </summary>
     public static void Main()
     {
         var testStrings = new[] {
