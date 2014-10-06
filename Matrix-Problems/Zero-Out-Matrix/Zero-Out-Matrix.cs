@@ -78,7 +78,12 @@ public class ZeroOutMatrixSolution
             Console.WriteLine("Test Matrix #{0}:", testCase);
             ZeroOutMatrix(A, A.Length, A[0].Length);
             Console.WriteLine(string.Join("\n", A.Select(row => "{" 
-                + string.Join(", ", row.Select(num => num.ToString())) 
+                //+ string.Join(", ", row.Select(num => num.ToString()))
+                //----------------------------------------------------------------
+                // In .NET 4, the Join method has been overloaded to accept ints.
+                //----------------------------------------------------------------
+                + string.Join(", ", row)
+                //----------------------------------------------------------------
                 + "}")));
             testCase++;
         }

@@ -38,4 +38,10 @@ if __name__ == "__main__":
     for (index, A) in enumerate(testMatrices):
         zeroOutMatrix(A, len(A), len(A[0]))
         print(str.format("Test Matrix #{0}:", index + 1))
+##        print("\n".join(map(lambda row: "[" + ", ".join(map(str, row)) + "]",
+##                            A)))
+        ############################################
+        # Printing a list in Python is really nice.
+        ############################################
         print("\n".join(map(str, A)))
+        ############################################
