@@ -48,7 +48,8 @@ public class IsPalindromeSolution
     /// </summary>
     public static void Main()
     {
-        var testStrings = new[] {
+        var testStrings = new[]
+        {
 			"",
 			"#$%^%$#",
 			"rAcecar",

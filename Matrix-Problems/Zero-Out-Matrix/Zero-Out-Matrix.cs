@@ -5,6 +5,9 @@ public class ZeroOutMatrixSolution
 {
     /// <summary>
     /// Given an m by n matrix A, zeroes out each row and column that contains a 0.
+    /// NOTE: The matrix A has been implemented as a jagged array (similar to Python).
+    ///       We prefer this to a multidimensional array because it easily allows us to
+    ///       iterate through its rows, allowing us to print it nicely via Join.
     /// </summary>
     /// <param name="A">The matrix to be zeroed out.</param>
     /// <param name="m">The number of rows in A.</param>
@@ -46,7 +49,8 @@ public class ZeroOutMatrixSolution
     /// </summary>
     public static void Main()
     {
-        var testMatrices = new[] {
+        var testMatrices = new[]
+        {
 			new[]
 			{
 			    new[] {0, 0, 0},
@@ -73,7 +77,9 @@ public class ZeroOutMatrixSolution
         {
             Console.WriteLine("Test Matrix #{0}:", testCase);
             ZeroOutMatrix(A, A.Length, A[0].Length);
-            Console.WriteLine(string.Join("\n", A.Select(row => "{" + string.Join(", ", row.Select(num => num.ToString())) + "}")));
+            Console.WriteLine(string.Join("\n", A.Select(row => "{" 
+                + string.Join(", ", row.Select(num => num.ToString())) 
+                + "}")));
             testCase++;
         }
 
