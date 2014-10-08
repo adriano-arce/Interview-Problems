@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Is-Palindrome-Solution", "CSharp-Solutions\Is-Palindrome-Solution.csproj", "{E1A7C4D8-2F8D-40B0-8B43-1B7CFE271FED}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Is-Palindrome-Solution", "Is-Palindrome-Solution\Is-Palindrome-Solution.csproj", "{E1A7C4D8-2F8D-40B0-8B43-1B7CFE271FED}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zero-Out-Matrix-Solution", "Zero-Out-Matrix-Solution\Zero-Out-Matrix-Solution.csproj", "{71F41741-9BFD-429F-9345-184CFEB2E8C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rotate-Matrix-Solution", "Rotate-Matrix-Solution\Rotate-Matrix-Solution.csproj", "{2D035F78-C31A-4332-ACB0-EB70CB05BBA3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{71F41741-9BFD-429F-9345-184CFEB2E8C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71F41741-9BFD-429F-9345-184CFEB2E8C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71F41741-9BFD-429F-9345-184CFEB2E8C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D035F78-C31A-4332-ACB0-EB70CB05BBA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D035F78-C31A-4332-ACB0-EB70CB05BBA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D035F78-C31A-4332-ACB0-EB70CB05BBA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D035F78-C31A-4332-ACB0-EB70CB05BBA3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
