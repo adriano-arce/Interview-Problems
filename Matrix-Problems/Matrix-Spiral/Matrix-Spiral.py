@@ -1,4 +1,4 @@
-def matrixSpiral(A, m, n):
+def matrix_spiral(A, m, n):
     """
     Prints the contents of the given m by n matrix A by starting from the top
     left corner and spiralling clockwise in towards the centre.
@@ -7,27 +7,27 @@ def matrixSpiral(A, m, n):
     results = []
     
     # These keep track of the corners of the inner submatrix to be printed.
-    (rowStart, rowStop, colStart, colStop) = (0, m, 0, n)
-    while rowStart < rowStop and colStart < colStop:
+    (row_start, row_stop, col_start, col_stop) = (0, m, 0, n)
+    while row_start < row_stop and col_start < col_stop:
         # Print the first row, then the last column.
-        for col in range(colStart, colStop):
-            results.append(A[rowStart][col])
-        for row in range(rowStart + 1, rowStop):
-            results.append(A[row][colStop - 1])
+        for col in range(col_start, col_stop):
+            results.append(A[row_start][col])
+        for row in range(row_start + 1, row_stop):
+            results.append(A[row][col_stop - 1])
 
         # Check that the current submatrix isn't a narrow row/column.
-        if rowStop - rowStart > 1 and colStop - colStart > 1:
+        if row_stop - row_start > 1 and col_stop - col_start > 1:
             # Print the last row, then the first column.
-            for col in range(colStop - 2, colStart - 1, -1):
-                results.append(A[rowStop - 1][col])
-            for row in range(rowStop - 2, rowStart, -1):
-                results.append(A[row][colStart])
+            for col in range(col_stop - 2, col_start - 1, -1):
+                results.append(A[row_stop - 1][col])
+            for row in range(row_stop - 2, row_start, -1):
+                results.append(A[row][col_start])
 
         # Move on to the next submatrix.
-        rowStart += 1
-        rowStop -= 1
-        colStart += 1
-        colStop -= 1
+        row_start += 1
+        row_stop -= 1
+        col_start += 1
+        col_stop -= 1
 
     print(" ".join(map(str, results)))
 
@@ -53,4 +53,4 @@ if __name__ == "__main__":
     ]
     for (index, A) in enumerate(testMatrices):
         print(str.format("Test Matrix #{0}:", index + 1))
-        matrixSpiral(A, len(A), len(A[0]))
+        matrix_spiral(A, len(A), len(A[0]))

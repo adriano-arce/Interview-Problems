@@ -1,24 +1,24 @@
-def zeroOutMatrix(A, m, n):
+def zero_out_matrix(A, m, n):
     """
     Zeroes out each row and column of the given m by n matrix A that
     contains at least one 0.
     """
     
     # Keep track of which rows/cols have at least one 0.
-    rowHasZero = [False]*m
-    colHasZero = [False]*n
+    row_has_zero = [False] * m
+    col_has_zero = [False] * n
 
     # Pass 1: Search for zeroes, without modifying A yet.
     for row in range(m):
         for col in range(n):
             if A[row][col] == 0:
-                rowHasZero[row] = True
-                colHasZero[col] = True
+                row_has_zero[row] = True
+                col_has_zero[col] = True
 
     # Pass 2: Zero out the appropriate rows/cols.
     for row in range(m):
         for col in range(n):
-            if rowHasZero[row] or colHasZero[col]:
+            if row_has_zero[row] or col_has_zero[col]:
                 A[row][col] = 0
 
 if __name__ == "__main__":
@@ -36,12 +36,13 @@ if __name__ == "__main__":
          [9, 8, 7, 6, 5]],
     ]
     for (index, A) in enumerate(testMatrices):
-        zeroOutMatrix(A, len(A), len(A[0]))
+        zero_out_matrix(A, len(A), len(A[0]))
         print(str.format("Test Matrix #{0}:", index + 1))
-##        print("\n".join(map(lambda row: "[" + ", ".join(map(str, row)) + "]",
-##                            A)))
-        ############################################
-        # Printing a list in Python is really nice.
-        ############################################
+        #print("\n".join(map(lambda row: "[" + ", ".join(map(str, row)) + "]",
+        #                    A)))
+
+        #-----------------------------------------------------------------------
+        # This is a much easier way to print matrices in Python.
+        # Printing a list L can be done via str(L).
+        #-----------------------------------------------------------------------
         print("\n".join(map(str, A)))
-        ############################################
