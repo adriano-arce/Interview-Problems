@@ -4,3 +4,6 @@ obj/
 
 # User-specific files.
 *.suo
+
+# Pycharm-specific files.
+.idea

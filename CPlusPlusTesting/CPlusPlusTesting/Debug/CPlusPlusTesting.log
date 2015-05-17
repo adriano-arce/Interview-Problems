@@ -1,0 +1,11 @@
+﻿Build started 2014-12-04 7:06:40 PM.
+     1>Project "C:\Users\Adriano\Documents\GitHub\Interview-Problems\CPlusPlusTesting\CPlusPlusTesting\CPlusPlusTesting.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\CPlusPlusTesting.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt CPlusPlusTesting.cpp
+         CPlusPlusTesting.cpp
+     1>c:\users\adriano\documents\github\interview-problems\cplusplustesting\cplusplustesting\cplusplustesting.cpp(12): error C4716: 'factorial' : must return a value
+     1>Done Building Project "C:\Users\Adriano\Documents\GitHub\Interview-Problems\CPlusPlusTesting\CPlusPlusTesting\CPlusPlusTesting.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.57

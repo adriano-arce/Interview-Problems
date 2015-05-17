@@ -1,6 +1,7 @@
 from string import punctuation
 
-def isPalindrome(s):
+
+def is_palindrome(s):
     """
     Returns true iff the string s is a palindrome.
     Clarification to ask the interviewer:
@@ -9,33 +10,33 @@ def isPalindrome(s):
     """
 
     # Strip out all whitespace and punctuation, and ignore case.
-    noSpaceChars = list("".join(s.split()))
-    noPuncChars = [char for char in noSpaceChars if char not in punctuation]
-    stripped = "".join(noPuncChars).lower()
+    no_space_chars = list("".join(s.split()))
+    no_punc_chars = [char for char in no_space_chars if char not in punctuation]
+    stripped = "".join(no_punc_chars).lower()
 
     # Compare the first half of newS with the last half and return false
     # if any pair doesn't match. If len(newS) is odd, there is no need to look
     # at the middle character.
     # NOTE: Unlike '/', the '//' operator performs floor division.
 
-#####################################################################
-## Solution 1: Imperative.
-#####################################################################
-##    for i in range(len(stripped) // 2):
-##        if stripped[i] != stripped[len(stripped) - 1 - i]:
-##            return False
-##    return True
-#####################################################################
-## Solution 2: Declarative (negated quantifiers).
-#####################################################################
-##    return not any([stripped[i] != stripped[len(stripped) - 1 - i]
-##                    for i in range(len(stripped) // 2)])
-#####################################################################
-## Solution 3: Declarative (normal quantifiers).
-#####################################################################
+    #---------------------------------------------------------------------------
+    # Solution 1: Imperative.
+    #---------------------------------------------------------------------------
+    #    for i in range(len(stripped) // 2):
+    #        if stripped[i] != stripped[len(stripped) - 1 - i]:
+    #            return False
+    #    return True
+    #---------------------------------------------------------------------------
+    # Solution 2: Declarative (negated quantifiers).
+    #---------------------------------------------------------------------------
+    #    return not any([stripped[i] != stripped[len(stripped) - 1 - i]
+    #                    for i in range(len(stripped) // 2)])
+    #---------------------------------------------------------------------------
+    ## Solution 3: Declarative (normal quantifiers).
+    #---------------------------------------------------------------------------
     return all([stripped[i] == stripped[len(stripped) - 1 - i]
                 for i in range(len(stripped) // 2)])
-#####################################################################
+
 
 if __name__ == "__main__":
     testStrings = [
@@ -53,4 +54,4 @@ if __name__ == "__main__":
     for (index, s) in enumerate(testStrings):
         print(str.format("Test String #{0}:", index + 1))
         print(str.format("{0} {1} a palindrome.",
-                         repr(s), "is" if isPalindrome(s) else "is not"))
+                         repr(s), "is" if is_palindrome(s) else "is not"))
