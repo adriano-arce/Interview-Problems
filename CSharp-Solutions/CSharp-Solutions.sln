@@ -15,6 +15,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "String-Solutions", "String-
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Matrix-Solutions", "Matrix-Solutions", "{983A4592-D998-400A-994D-F4F750E07889}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LinkedList-Solutions", "LinkedList-Solutions", "{A6B2C043-42C2-4E55-8A3D-596A280205AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Find-Merge-Solution", "Find-Merge-Solution\Find-Merge-Solution.csproj", "{5A829DC3-92F3-46C4-9BB8-D4A275A6CAC9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +41,10 @@ Global
 		{7D64263B-9529-40E0-B725-39F70F58188F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D64263B-9529-40E0-B725-39F70F58188F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D64263B-9529-40E0-B725-39F70F58188F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A829DC3-92F3-46C4-9BB8-D4A275A6CAC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A829DC3-92F3-46C4-9BB8-D4A275A6CAC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A829DC3-92F3-46C4-9BB8-D4A275A6CAC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A829DC3-92F3-46C4-9BB8-D4A275A6CAC9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,5 +54,6 @@ Global
 		{71F41741-9BFD-429F-9345-184CFEB2E8C2} = {983A4592-D998-400A-994D-F4F750E07889}
 		{2D035F78-C31A-4332-ACB0-EB70CB05BBA3} = {983A4592-D998-400A-994D-F4F750E07889}
 		{7D64263B-9529-40E0-B725-39F70F58188F} = {537E6A6D-10CD-4758-BE4A-B9C963313D5D}
+		{5A829DC3-92F3-46C4-9BB8-D4A275A6CAC9} = {A6B2C043-42C2-4E55-8A3D-596A280205AF}
 	EndGlobalSection
 EndGlobal
