@@ -5,7 +5,7 @@ public class RotateMatrixSolution
 {
     public static int[][] RotateInPlace(int[][] A, int n)
     {
-        // Cyclically permute the entries a layer at a time.
+        // Cyclically permute the entries one layer at a time.
         var first = 0;
         var last = n - 1;
         while (first < last)
