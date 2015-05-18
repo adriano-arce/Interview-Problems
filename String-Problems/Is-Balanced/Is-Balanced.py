@@ -27,6 +27,7 @@ if __name__ == "__main__":
         "[[[(({})[])]]{()}]"
     ]
     for (index, s) in enumerate(testStrings):
-        print(str.format("Test String #{0}:", index + 1))
-        print(str.format("{0} {1} balanced.",
-                         repr(s), "is" if is_balanced(s) else "is not"))
+        print("Test String #{}:".format(index + 1))
+        print("{} {} balanced.".format(
+            repr(s), "is" if is_balanced(s) else "is not"
+        ))

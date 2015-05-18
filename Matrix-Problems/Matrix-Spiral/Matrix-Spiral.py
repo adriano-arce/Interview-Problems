@@ -52,5 +52,5 @@ if __name__ == "__main__":
          [10,  9,  8,  7]]
     ]
     for (index, A) in enumerate(testMatrices):
-        print(str.format("Test Matrix #{0}:", index + 1))
+        print("Test Matrix #{}:".format(index + 1))
         matrix_spiral(A, len(A), len(A[0]))

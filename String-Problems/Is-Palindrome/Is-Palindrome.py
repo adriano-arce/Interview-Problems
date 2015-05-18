@@ -52,6 +52,7 @@ if __name__ == "__main__":
         "A man, a plan, a canal, Panama!"
     ]
     for (index, s) in enumerate(testStrings):
-        print(str.format("Test String #{0}:", index + 1))
-        print(str.format("{0} {1} a palindrome.",
-                         repr(s), "is" if is_palindrome(s) else "is not"))
+        print("Test String #{}:".format(index + 1))
+        print("{} {} a palindrome.".format(
+            repr(s), "is" if is_palindrome(s) else "is not"
+        ))

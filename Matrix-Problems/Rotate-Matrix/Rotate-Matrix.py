@@ -29,5 +29,5 @@ if __name__ == "__main__":
     ]
     for (index, A) in enumerate(testMatrices):
         B = rotate_matrix(A, len(A), len(A[0]))
-        print(str.format("Test Matrix #{0}:", index + 1))
+        print("Test Matrix #{}:".format(index + 1))
         print("\n".join(map(str, B)))
