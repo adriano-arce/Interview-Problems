@@ -38,6 +38,7 @@ if __name__ == "__main__":
         ("", ""),
         ("stackoverflow", "flowstackover"),
         ("12345", "5xy1234"),
+        ("abc123^&*", "a1^cb2&*3"),
         ("stackoverflaw", "overflowstack"),
         ("!!?!", "!?!")
     ]

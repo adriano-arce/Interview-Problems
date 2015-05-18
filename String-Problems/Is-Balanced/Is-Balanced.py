@@ -25,6 +25,7 @@ if __name__ == "__main__":
         "(2 + y) - e^{2x + 3} * [7x] / [sin(2e^{7x})]",
         "5(2 + x]",
         "4)x + 3(",
+        "[][](){{}}[()]",
         "[[[(({})[])]]{()}]"
     ]
     for (index, s) in enumerate(testStrings):
