@@ -1,6 +1,6 @@
 def is_rotation(s, t):
     """
-    Returns true iff s is a rotated version of t.
+    Returns True iff s is a rotated version of t.
     """
     return len(s) == len(t) and s in t + t
 

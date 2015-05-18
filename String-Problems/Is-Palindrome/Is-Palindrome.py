@@ -3,7 +3,8 @@ from string import punctuation
 
 def is_palindrome(s):
     """
-    Returns true iff the string s is a palindrome.
+    Returns True iff the string s is a palindrome.
+
     Clarification to ask the interviewer:
     - Are whitespace, punctuation, and case considered important?
     - For this function, we assume that they are NOT important.
