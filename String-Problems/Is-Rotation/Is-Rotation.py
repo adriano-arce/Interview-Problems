@@ -2,6 +2,7 @@ def is_rotation(s, t):
     """
     Returns True iff s is a rotated version of t.
     """
+
     return len(s) == len(t) and s in t + t
 
 if __name__ == "__main__":

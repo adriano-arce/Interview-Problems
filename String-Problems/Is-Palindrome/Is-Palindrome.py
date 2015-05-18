@@ -7,7 +7,8 @@ def is_palindrome(s):
 
     Clarification to ask the interviewer:
     - Are whitespace, punctuation, and case considered important?
-    - For this function, we assume that they are NOT important.
+
+    Here, we assume that they are NOT important.
     """
 
     # Strip out all whitespace and punctuation, and ignore case.
