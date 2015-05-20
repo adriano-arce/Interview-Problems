@@ -10,7 +10,6 @@ def is_palindrome(s):
 
     Here, we assume that they are NOT important.
     """
-
     # Strip out all whitespace and punctuation, and ignore case.
     no_space_chars = list("".join(s.split()))
     no_punc_chars = [char for char in no_space_chars if char not in punctuation]
@@ -34,7 +33,7 @@ def is_palindrome(s):
     #    return not any([stripped[i] != stripped[len(stripped) - 1 - i]
     #                    for i in range(len(stripped) // 2)])
     #---------------------------------------------------------------------------
-    ## Solution 3: Declarative (normal quantifiers).
+    # Solution 3: Declarative (normal quantifiers).
     #---------------------------------------------------------------------------
     return all([stripped[i] == stripped[len(stripped) - 1 - i]
                 for i in range(len(stripped) // 2)])

@@ -2,7 +2,6 @@ def rotate_matrix(A, m, n):
     """
     Rotates the given m by n matrix A 90 degrees clockwise.
     """
-
     B = [[0] * m for i in range(n)]
     for i in range(m):
         for j in range(n):

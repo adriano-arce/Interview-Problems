@@ -3,7 +3,6 @@ def matrix_spiral(A, m, n):
     Prints the contents of the given m by n matrix A by starting from the top
     left corner and spiralling clockwise in towards the centre.
     """
-    
     results = []
     
     # These keep track of the corners of the inner submatrix to be printed.

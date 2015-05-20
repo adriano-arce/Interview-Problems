@@ -26,6 +26,9 @@ class Node:
 #
 #
 # def python_2_linked(python_list):
+#     """
+#     Converts the given Python list into a linked list.
+#     """
 #     linked_list = LinkedList()
 #     for i in range(len(python_list) - 1, -1, -1):
 #         linked_list.insert(python_list[i])
@@ -44,7 +47,6 @@ def find_merge(head1, head2):
         traverse both lists *backwards* from the tail. To reduce to this simpler
         problem, we adjust the head pointers until they are equidistant.
     """
-
     len1 = 0
     ptr1 = head1
     while ptr1:

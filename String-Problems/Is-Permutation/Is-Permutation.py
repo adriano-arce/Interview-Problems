@@ -13,7 +13,6 @@ def is_permutation(s, t):
     will return the integer representing the Unicode code point of the character
     in [0, 65535].
     """
-
     #---------------------------------------------------------------------------
     # Algorithm 1: Cross off matching characters from strings.
     #              O(n^2) time, O(n) space.

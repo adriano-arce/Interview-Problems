@@ -3,7 +3,6 @@ def zero_out_matrix(A, m, n):
     Zeroes out each row and column of the given m by n matrix A that
     contains at least one 0.
     """
-    
     # Keep track of which rows/cols have at least one 0.
     row_has_zero = [False] * m
     col_has_zero = [False] * n

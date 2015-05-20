@@ -2,7 +2,6 @@ def is_balanced(s):
     """
     Returns True iff all types of brackets in s are balanced.
     """
-
     bracket_dict = {"(": ")", "[": "]", "{": "}"}
     right_bracket_set = {")", "]", "}"}
     right_bracket_stack = []
