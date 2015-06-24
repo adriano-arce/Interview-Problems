@@ -20,7 +20,7 @@ class Node:
     def recurse_list_to_tree(L, i, j):
         if i > j:
             return None
-        m = (i + j) // 2
+        m = i + (j - i) // 2  # Same as (i + j) // 2, but avoids overflow.
         left = Node.recurse_list_to_tree(L, i, m - 1)
         right = Node.recurse_list_to_tree(L, m + 1, j)
         return Node(L[m], left, right)
