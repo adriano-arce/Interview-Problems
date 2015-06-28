@@ -4,7 +4,7 @@ class ListNode:
         self.next_node = next_node
 
     @staticmethod
-    def list_to_linked_list(L):
+    def list_to_LL(L):
         """
         Converts the given Python list into a linked list.
         """
@@ -63,12 +63,12 @@ class TreeNode:
 
 if __name__ == "__main__":
     test_lists = [
-        ListNode.list_to_linked_list([2, 3, 4, 5, 6, 7, 8]),
-        ListNode.list_to_linked_list(list(range(5, 50))),
-        ListNode.list_to_linked_list([7, 1, 3, 4, 5, 6]),
-        ListNode.list_to_linked_list([]),
-        ListNode.list_to_linked_list([1, 2, 3, 4, 5]),
-        ListNode.list_to_linked_list([6])
+        ListNode.list_to_LL([2, 3, 4, 5, 6, 7, 8]),
+        ListNode.list_to_LL(list(range(5, 50))),
+        ListNode.list_to_LL([7, 1, 3, 4, 5, 6]),
+        ListNode.list_to_LL([]),
+        ListNode.list_to_LL([1, 2, 3, 4, 5]),
+        ListNode.list_to_LL([6])
     ]
     for i, LL in enumerate(test_lists):
         print("Test Case #{}:".format(i + 1))
