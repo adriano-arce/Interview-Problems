@@ -33,9 +33,33 @@ class TreeNode:
         return right + curr + left
 
     @staticmethod
-    def LL_to_tree(L):
-        return None
+    def LL_to_tree(head):
+        n = 0
+        p = head
+        while p:
+            n += 1
+            p = p.next_node
+        __, root = TreeNode.recurse_LL_to_tree(head, 0, n - 1)
+        return root
 
+    @staticmethod
+    def recurse_LL_to_tree(unvisited, i, j):
+        """
+        Traverses the ith to jth nodes (inclusive) of the original linked list.
+        Returns the next ListNode to be visited and the root of the tree
+        corresponding to the traversed section of the linked list.
+        """
+        if i > j:
+            return unvisited, None
+        mid = i + (j - i)//2
+        unvisited, left = TreeNode.recurse_LL_to_tree(unvisited, i, mid - 1)
+
+        root = TreeNode(unvisited.data, left)
+        unvisited = unvisited.next_node
+
+        unvisited, right = TreeNode.recurse_LL_to_tree(unvisited, mid + 1, j)
+        root.right = right
+        return unvisited, root
 
 if __name__ == "__main__":
     test_lists = [
