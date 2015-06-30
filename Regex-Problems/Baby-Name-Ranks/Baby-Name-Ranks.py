@@ -6,7 +6,7 @@ def extract_names(filename):
     Given a file name for baby.html, returns a list starting with the year
     string followed by the name-rank strings in alphabetical order.
 
-    HTML file looks something like:
+    The HTML file looks something like:
         ...
         <h3 align="center">Popularity in 1990</h3>
         ....
