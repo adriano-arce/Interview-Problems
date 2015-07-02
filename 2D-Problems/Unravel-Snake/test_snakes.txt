@@ -1,0 +1,35 @@
+SNAKE
+    A   DUSTY
+    T   N   U
+    SALSA   M
+            M
+            YACHTS
+--------------------------------------------------------------------------------
+W    DINOSAUR
+I    E      E
+Z  CAR  Y   A
+A  I    L   C
+R  D    T  OT
+D  R    B  V
+R  O    U  A
+YAWN    SGEL
+--------------------------------------------------------------------------------
+NUMEROUS
+       Y
+LUXURY M
+O    E B
+B O  A O
+M DAOR L
+Y      I
+SDRATSUC
+--------------------------------------------------------------------------------
+R       TIGER
+E       O   E
+S       H   T  SO
+I  GRAPES   U  N
+G  A        R  R
+NULL  GNIHTON  E
+      R        T
+      A        N
+      N        A
+      DELIGHTFUL
