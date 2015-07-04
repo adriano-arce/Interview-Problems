@@ -30,7 +30,6 @@ class Node:
         return Node.recurse_list_to_tree(L, 0, len(L) - 1)
 
 
-
 def is_balanced(root):
     """
     Returns True iff for each node, the depth of its two subtrees never differ
@@ -41,9 +40,29 @@ def is_balanced(root):
         height(n): The number of edges on the longest path from n to a leaf.
 
     Hence, it follows that:
-        height(T) = height(root) = max(depth(n) for n in T)
+        height(T) = height(root) = max(depth(n) for n in T) = depth(T)
+
+    Assume that the empty tree is balanced and has depth -1.
     """
-    return True
+    return depth(root) != -2
+
+
+def depth(root):
+    """
+    Returns -2 if the tree is not balanced; else, returns its depth.
+    """
+    if root:
+        left_depth = depth(root.left)
+        if left_depth == -2:
+            return -2
+        right_depth = depth(root.right)
+        if right_depth == -2:
+            return -2
+        if abs(left_depth - right_depth) > 1:
+            return -2
+        return 1 + max(left_depth, right_depth)
+    return -1  # The tree is empty.
+
 
 def main():
     node4, node5, node7 = Node(4), Node(5), Node(7)
@@ -51,7 +70,7 @@ def main():
     node3 = Node(3, right=node6)
     node1 = Node(1, node2, node3)
     test_trees = [
-        None, node7, node6, node3, node1
+        None, node7, node6, node3, node1, node2
     ]
     for index, tree in enumerate(test_trees):
         print("Test Case #{}: {}".format(index + 1, is_balanced(tree)))
