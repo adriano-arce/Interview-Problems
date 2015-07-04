@@ -32,17 +32,30 @@ class Node:
 
 
 def is_balanced(root):
+    """
+    Returns True iff for each node, the depth of its two subtrees never differ
+    by more than one.
+
+    Definitions:
+         depth(n): The number of edges from n to the root.
+        height(n): The number of edges on the longest path from n to a leaf.
+
+    Hence, it follows that:
+        height(T) = height(root) = max(depth(n) for n in T)
+    """
     return True
 
-
-if __name__ == "__main__":
+def main():
+    node4, node5, node7 = Node(4), Node(5), Node(7)
+    node2, node6 = Node(2, node4, node5), Node(6, node7)
+    node3 = Node(3, right=node6)
+    node1 = Node(1, node2, node3)
     test_trees = [
-        Node.list_to_tree([2, 3, 4, 5, 6]),
-        Node.list_to_tree([2, 4, 3, 5]),
-        Node.list_to_tree([3, 4, 5, 6, 7, 8, 9]),
-        Node.list_to_tree([]),
+        None, node7, node6, node3, node1
     ]
     for index, tree in enumerate(test_trees):
-        isBST = is_balanced(tree)
-        print("Test Case #{}: {}".format(index + 1, isBST))
+        print("Test Case #{}: {}".format(index + 1, is_balanced(tree)))
         print(tree)
+
+if __name__ == "__main__":
+    main()
