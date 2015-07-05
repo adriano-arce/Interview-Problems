@@ -56,14 +56,14 @@ def is_palindrome(head):
         slow = slow.next_node
     # Reverse the second half and compare with the first half.
     slow = reverse(slow)
-    second_head = slow
+    curr = slow
     is_pal = True
-    while slow and is_pal:
-        if slow.data != head.data:
+    while curr and is_pal:
+        if curr.data != head.data:
             is_pal = False
-        slow, head = slow.next_node, head.next_node
-    # Undo the reversal.
-    reverse(second_head)
+        curr, head = curr.next_node, head.next_node
+    # Undo the reversal and return the result.
+    reverse(slow)
     return is_pal
 
 
