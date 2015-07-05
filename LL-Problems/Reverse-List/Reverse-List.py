@@ -53,9 +53,9 @@ def reverse_list(head):
     #---------------------------------------------------------------------------
     # Method 3: Iterative.
     #---------------------------------------------------------------------------
-    prev, curr = None, head
-    while curr:
-        curr.next_node, prev, curr = prev, curr, curr.next_node
+    prev = None
+    while head:
+        head.next_node, prev, head = prev, head, head.next_node
     return prev
 
 
