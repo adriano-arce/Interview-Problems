@@ -9,8 +9,9 @@ def get_urls(filename):
     comes from the filename and puzzle URLs contain the word puzzle. If a URL is
     duplicated, then we only include it once.
     """
-    index = filename.find("_")
-    prefix = "http://" + filename[index + 1:]
+    under_index = filename.find("_")
+    log_index = filename.find(".log")
+    prefix = "http://" + filename[under_index + 1:log_index]
     with open(filename, "r") as f:
         lines = f.read().split("\n")
     pattern = r"GET (\S*/puzzle/\S*\w+-(\w+).jpg) HTTP"
@@ -44,7 +45,7 @@ def download_imgs(urls, dest):
 
 
 def main():
-    log_files = ["animal_code.google.com", "place_code.google.com"]
+    log_files = ["animal_code.google.com.log", "place_code.google.com.log"]
     for log_file in log_files:
         print("Processing the", log_file, "logfile...")
         under = log_file.find("_")
