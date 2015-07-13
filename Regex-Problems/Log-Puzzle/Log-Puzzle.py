@@ -22,7 +22,7 @@ def get_urls(filename):
         match = regex.search(line)
         if match:
             url_dict[prefix + match.group(1)] = match.group(2)
-    return sorted(url_dict, key=lambda u:url_dict[u])
+    return sorted(url_dict, key=lambda u: url_dict[u])
 
 
 def download_imgs(urls, dest):

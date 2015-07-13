@@ -89,11 +89,11 @@ def python_2_linked(python_list):
 
 if __name__ == "__main__":
     testHeadPairs = [
-        (python_2_linked([2, 1      ]), python_2_linked([4, 3      ])),
-        (python_2_linked([5         ]), python_2_linked([7         ])),
-        (python_2_linked([9, 8, 7   ]), python_2_linked([8, 7, 6   ])),
-        (python_2_linked([1         ]), python_2_linked([9, 9, 9, 9])),
-        (python_2_linked([0, 0, 0, 1]), python_2_linked([2         ]))
+        (python_2_linked([2, 1]), python_2_linked([4, 3])),
+        (python_2_linked([5]), python_2_linked([7])),
+        (python_2_linked([9, 8, 7]), python_2_linked([8, 7, 6])),
+        (python_2_linked([1]), python_2_linked([9, 9, 9, 9])),
+        (python_2_linked([0, 0, 0, 1]), python_2_linked([2]))
     ]
     for (index, headPair) in enumerate(testHeadPairs):
         print("Test Pair #{}:".format(index + 1))

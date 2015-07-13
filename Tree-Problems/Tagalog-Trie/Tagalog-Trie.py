@@ -42,10 +42,11 @@ def sort_words(words):
 def main():
     test_lists = [
         ["abakada", "alpabet", "tagalog", "ako"],
-        ["ang","ano","anim","alak","alam","alab"],
-        ["siya","niya","kaniya","ikaw","ito","iyon"],
-        ["kaba","baka","naba","ngipin","nipin"],
-        ["knilngiggnngginggn","ingkigningg","kingkong","dingdong","dindong","dingdont","ingkblot"],
+        ["ang", "ano", "anim", "alak", "alam", "alab"],
+        ["siya", "niya", "kaniya", "ikaw", "ito", "iyon"],
+        ["kaba", "baka", "naba", "ngipin", "nipin"],
+        ["knilngiggnngginggn", "ingkigningg", "kingkong", "dingdong", "dindong",
+         "dingdont", "ingkblot"],
         ["silangang", "baka", "bada", "silang"]
     ]
     for i, test_list in enumerate(test_lists):
