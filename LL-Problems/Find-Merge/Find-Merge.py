@@ -70,6 +70,6 @@ if __name__ == "__main__":
         print("Test Pair #{}:".format(index + 1))
         mergeNode = find_merge(*headPair)
         if mergeNode:
-            print(mergeNode.data)
+            print("    Merged at: {}.".format(mergeNode.data))
         else:
-            print("No merge node detected.")
+            print("    No merge node detected.")
