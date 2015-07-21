@@ -36,7 +36,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\Matrix-Problems\Rotate-Matrix\Rotate-Matrix.cs">
+    <Compile Include="..\..\2D-Problems\Rotate-Matrix\Rotate-Matrix.cs">
       <Link>Rotate-Matrix.cs</Link>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />

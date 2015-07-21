@@ -34,8 +34,5 @@ public class IsRotationSolution
                               s, t, ElegantIsRotation(s, t) ? "are" : "are not");
             testCase++;
         }
-
-        Console.Write("\nPress any key to continue...");
-        Console.ReadKey();
     }
 }

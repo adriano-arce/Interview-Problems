@@ -69,8 +69,5 @@ public class IsPalindromeSolution
                               ToRepr(s), IsPalindrome(s) ? "is" : "is not");
             testCase++;
         }
-
-        Console.Write("\nPress any key to continue...");
-        Console.ReadKey();
     }
 }

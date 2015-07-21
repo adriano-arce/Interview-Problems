@@ -4,37 +4,6 @@ class Node:
         self.next_node = next_node
 
 
-# class LinkedList:
-#     def __init__(self):
-#         self.length = 0
-#         self.head = None
-#
-#     def __str__(self):
-#         str_data_list = []
-#         p = self.head
-#         while p:
-#             str_data_list.append(str(p.data))
-#             p = p.next_node
-#         return "[" + ", ".join(str_data_list) + "]"
-#
-#     def insert(self, data):
-#         """
-#         Inserts a new node (with the given data) at the head of the list.
-#         """
-#         self.head = Node(data, self.head)
-#         self.length += 1
-#
-#
-# def python_2_linked(python_list):
-#     """
-#     Converts the given Python list into a linked list.
-#     """
-#     linked_list = LinkedList()
-#     for i in range(len(python_list) - 1, -1, -1):
-#         linked_list.insert(python_list[i])
-#     return linked_list
-
-
 def find_merge(head1, head2):
     """
     Given the heads of two linked lists, returns the first node where they merge

@@ -4,10 +4,12 @@ using System.Linq;
 public class ZeroOutMatrixSolution
 {
     /// <summary>
-    /// Given an m by n matrix A, zeroes out each row and column that contains a 0.
-    /// NOTE: The matrix A has been implemented as a jagged array (similar to Python).
-    ///       We prefer this to a multidimensional array because it easily allows us to
-    ///       iterate through its rows, allowing us to print it nicely via Join.
+    /// Given an m by n matrix A, zeroes out each row/column that contains a 0.
+    /// 
+    /// NOTE: The matrix A has been implemented as a jagged array (similar to
+    ///       Python). We prefer this to a multidimensional array because it 
+    ///       easily allows us to iterate through its rows, allowing us to
+    ///       print it nicely via Join.
     /// </summary>
     /// <param name="A">The matrix to be zeroed out.</param>
     /// <param name="m">The number of rows in A.</param>
@@ -87,8 +89,5 @@ public class ZeroOutMatrixSolution
                 + "}")));
             testCase++;
         }
-
-        Console.Write("\nPress any key to continue...");
-        Console.ReadKey();
     }
 }

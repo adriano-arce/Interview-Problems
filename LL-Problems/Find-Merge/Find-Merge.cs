@@ -3,44 +3,21 @@ using System.Collections.Generic;
 
 public class FindMergeSolution
 {
+    /// <summary>
+    /// A simple Node class.
+    /// 
+    /// NOTE: Since Next has type Node&lt;T&gt; (a reference type), its default
+    ///       value is null.
+    /// </summary>
+    /// <typeparam name="T">The type of Data.</typeparam>
     public class Node<T>
     {
-        public T Value { get; set; }
+        public T Data { get; set; }
         public Node<T> Next { get; set; }
 
-        public Node(T value)
+        public Node(T data)
         {
-            Value = value;
-        }
-    }
-
-    public class LinkedList<T>
-    {
-        public Node<T> Head { get; set; }
-
-        public LinkedList(T[] co)
-        {
-            collection.
-            var curr = Head;
-            foreach (var value in collection)
-            {
-                var newNode = new Node<T>(value);
-                if (Head == null)
-                {
-                    curr = newNode;
-                }
-                else
-                {
-                    curr.Next = newNode;
-                    curr = newNode;
-                }
-                curr = curr.Next;
-            }
-        }
-
-        public override string ToString()
-        {
-            return base.ToString();
+            Data = data;
         }
     }
 
@@ -71,8 +48,8 @@ public class FindMergeSolution
         //    Console.WriteLine("Test Case #{0}:", testCase);
         //    testCase++;
         //}
-
-        Console.Write("\nPress any key to continue...");
-        Console.ReadKey();
+        var node = new Node<int>(5);
+        Console.WriteLine(node);
+        Console.WriteLine(node.Next == null ? "node.Next" : "None");
     }
 }

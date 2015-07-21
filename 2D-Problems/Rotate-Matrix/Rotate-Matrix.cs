@@ -106,8 +106,5 @@ public class RotateMatrixSolution
                 rotated.Select(newRow => "{" + string.Join(", ", newRow) + "}")));
             testCase++;
         }
-
-        Console.Write("\nPress any key to continue...");
-        Console.ReadKey();
     }
 }

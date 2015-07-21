@@ -46,8 +46,6 @@ def get_power_set(s):
     return subsets
 
 
-
-
 def main():
     #---------------------------------------------------------------------------
     # For Version 1.
@@ -60,7 +58,7 @@ def main():
     ]
 
     for i, s in enumerate(test_sets):
-        print("Test Case #{}: {}".format(i, s))
+        print("Test Case #{}: {}".format(i + 1, s))
         print(get_power_set(s))
 
 if __name__ == "__main__":

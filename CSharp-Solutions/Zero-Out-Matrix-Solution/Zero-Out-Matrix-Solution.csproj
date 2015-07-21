@@ -36,7 +36,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\Matrix-Problems\Zero-Out-Matrix\Zero-Out-Matrix.cs">
+    <Compile Include="..\..\2D-Problems\Zero-Out-Matrix\Zero-Out-Matrix.cs">
       <Link>Zero-Out-Matrix.cs</Link>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
