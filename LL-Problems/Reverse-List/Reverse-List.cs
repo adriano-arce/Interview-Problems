@@ -87,7 +87,7 @@ public class FindMergeSolution
         for (var i = 0; i < testHead1s.Length; i++)
         {
             Console.WriteLine("Test Case #{0}:", i + 1);
-            var mergeNode = FindMerge(testHead1s[i], testHead2s[2]);
+            var mergeNode = FindMerge<int>(testHead1s[i], testHead2s[2]);
             string message = null;
             if (mergeNode != null)
             {

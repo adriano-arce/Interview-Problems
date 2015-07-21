@@ -3,6 +3,14 @@ class Node:
         self.data = data
         self.next_node = next_node
 
+    def __str__(self):
+        p = self
+        nums = []
+        while p:
+            nums.append(p.data)
+            p = p.next_node
+        return "[" + ", ".join(map(str, nums)) + "]"
+
     @staticmethod
     def list_to_LL(L):
         """
@@ -12,18 +20,6 @@ class Node:
         for i in range(len(L) - 1, -1, -1):
             head = Node(L[i], head)
         return head
-
-
-def print_list(head):
-    """
-    Prints the number corresponding to the given linked list.
-    """
-    ptr = head
-    nums = []
-    while ptr:
-        nums.append(ptr.data)
-        ptr = ptr.next_node
-    print("[" + ", ".join(map(str, nums)) + "]")
 
 
 def reverse_list(head):
@@ -85,6 +81,8 @@ if __name__ == "__main__":
 
     for (index, head) in enumerate(testHeads):
         print("Test List #{}:".format(index + 1))
-        print_list(head)
+        print("    BEFORE: {}".format(head))
+
         head = reverse_list(head)
-        print_list(head)
+
+        print("     AFTER: {}".format(head))
