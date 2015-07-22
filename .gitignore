@@ -1,9 +1,10 @@
 # Build folders.
 bin/
 obj/
+out/
 
 # User-specific files.
 *.suo
 
-# Pycharm-specific files.
+# PyCharm-specific and IntelliJ files.
 .idea
