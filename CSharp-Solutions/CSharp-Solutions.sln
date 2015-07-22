@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Express 2013 for Windows Desktop
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Is-Palindrome-Solution", "Is-Palindrome-Solution\Is-Palindrome-Solution.csproj", "{E1A7C4D8-2F8D-40B0-8B43-1B7CFE271FED}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Is-Palindrome", "Is-Palindrome\Is-Palindrome.csproj", "{E1A7C4D8-2F8D-40B0-8B43-1B7CFE271FED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zero-Out-Matrix-Solution", "Zero-Out-Matrix-Solution\Zero-Out-Matrix-Solution.csproj", "{71F41741-9BFD-429F-9345-184CFEB2E8C2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zero-Out-Matrix", "Zero-Out-Matrix\Zero-Out-Matrix.csproj", "{71F41741-9BFD-429F-9345-184CFEB2E8C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rotate-Matrix-Solution", "Rotate-Matrix-Solution\Rotate-Matrix-Solution.csproj", "{2D035F78-C31A-4332-ACB0-EB70CB05BBA3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rotate-Matrix", "Rotate-Matrix\Rotate-Matrix.csproj", "{2D035F78-C31A-4332-ACB0-EB70CB05BBA3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Is-Rotation-Solution", "Is-Rotation-Solution\Is-Rotation-Solution.csproj", "{7D64263B-9529-40E0-B725-39F70F58188F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Is-Rotation", "Is-Rotation\Is-Rotation.csproj", "{7D64263B-9529-40E0-B725-39F70F58188F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "String-Solutions", "String-Solutions", "{537E6A6D-10CD-4758-BE4A-B9C963313D5D}"
 EndProject
@@ -17,7 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2D-Solutions", "2D-Solution
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LL-Solutions", "LL-Solutions", "{A6B2C043-42C2-4E55-8A3D-596A280205AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Find-Merge-Solution", "Find-Merge-Solution\Find-Merge-Solution.csproj", "{5A829DC3-92F3-46C4-9BB8-D4A275A6CAC9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Find-Merge", "Find-Merge\Find-Merge.csproj", "{5A829DC3-92F3-46C4-9BB8-D4A275A6CAC9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reverse-List", "Reverse-List\Reverse-List.csproj", "{22AEB696-7408-47FC-A5BC-E41E23ED09ED}"
 EndProject
