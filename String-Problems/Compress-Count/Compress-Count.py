@@ -1,4 +1,6 @@
 def compress_count(s):
+    if not s:
+        return s
     compressed = []
     i = 0
     while i < len(s):
@@ -13,7 +15,7 @@ def compress_count(s):
 
 
 def decompress_count(s):
-    if len(s) < 2 or not s[1].isdigit():
+    if not s or len(s) < 2 or not s[1].isdigit():
         return s
     # ASSERT: s really needs to be decompressed.
     decompressed = []
@@ -36,6 +38,7 @@ if __name__ == "__main__":
         "",
         "p",
         "pq",
+        None,
         "abcde",
         "bbbc",
         "bbbcc",

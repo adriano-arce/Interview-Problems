@@ -5,8 +5,8 @@
     <content url="file://$MODULE_DIR$/../Array-Problems/Find-Equilibrium">
       <sourceFolder url="file://$MODULE_DIR$/../Array-Problems/Find-Equilibrium" isTestSource="false" />
     </content>
-    <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    <content url="file://$MODULE_DIR$/../String-Problems/Compress-Count">
+      <sourceFolder url="file://$MODULE_DIR$/../String-Problems/Compress-Count" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
