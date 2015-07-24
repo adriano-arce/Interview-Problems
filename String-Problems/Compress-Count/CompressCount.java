@@ -17,9 +17,9 @@ public class CompressCount
             i = j;
         }
         String candidate = compressed.toString();
-        if (candidate.length() >= s.length())
-            return s;
-        return candidate;
+        if (candidate.length() < s.length())
+            return candidate;
+        return s;
     }
 
     public static String decompressCount(String s)
