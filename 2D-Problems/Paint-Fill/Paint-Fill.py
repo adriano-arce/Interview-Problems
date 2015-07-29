@@ -31,23 +31,23 @@ def add(x, y, frontier, grid, old_colour):
 
 def main():
     original_grid = [
-        list("xxxxxxxxxxxxxxxxxxxzzxx"),
-        list("xxxxooooooooooooooxxxxx"),
-        list("xxxzzzooooooooooooooooo"),
-        list("xxxxoxxxxxxxxxxzzzxxoxx"),
-        list("xxxxoxxxxxxxxxxxxxxxoxx"),
-        list("xxxxoxxxxxxxxxxxxxxxoxx"),
-        list("xxxooooxxxxxxxxxxxxoooo")
+        list("kkkkkkkkwwwkkkkkkkkrrkk"),
+        list("kkkkbbbbbbbbbbbbbbkkkkk"),
+        list("kkkrrrbbbbbbbbbbbbbbbbb"),
+        list("kkkkbkkkkkkkkkkrrrkkbkk"),
+        list("kgkkbkkkkkkkkkkkkkkkbkk"),
+        list("kkkkbkkkkkkkkkkkkkkkbkk"),
+        list("kkkbbbbkkkkkkkkkkkkbbbb")
     ]
     test_inputs = [
-        (0, 0, "x"),
-        (0, 0, "o"),
-        (1, 4, "x"),
-        (1, 4, "o"),
-        (1, 4, "z"),
-        (2, 4, "x"),
-        (2, 4, "o"),
-        (2, 4, "z")
+        (0, 0, "k"),
+        (0, 0, "b"),
+        (1, 4, "k"),
+        (1, 4, "b"),
+        (1, 4, "r"),
+        (2, 4, "k"),
+        (2, 4, "b"),
+        (2, 4, "r")
     ]
     for i, test_input in enumerate(test_inputs):
         print("Test Case #{}: {}".format(i + 1, test_input))
