@@ -25,7 +25,8 @@ if __name__ == "__main__":
         "5(2 + x]",
         "4)x + 3(",
         "[][](){{}}[()]",
-        "[[[(({})[])]]{()}]"
+        "[[[(({})[])]]{()}]",
+        "((("
     ]
     for (index, s) in enumerate(testStrings):
         print("Test String #{}:".format(index + 1))
