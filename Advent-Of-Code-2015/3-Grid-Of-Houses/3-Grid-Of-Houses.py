@@ -17,11 +17,13 @@ def this_year(directions):
 
     return delivered
 
+
 def next_year(directions):
     delivered = this_year(directions[::2])
     delivered.update(this_year(directions[1::2]))
 
     return delivered
+
 
 def main():
     with open('input.txt', 'r') as f:

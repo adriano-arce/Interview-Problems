@@ -41,3 +41,5 @@ For example:
   feet.
   
 How many total feet of ribbon should they order?
+
+Source: http://adventofcode.com/day/2
