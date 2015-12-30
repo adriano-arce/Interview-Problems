@@ -21,8 +21,8 @@ For example:
 
 To what floor do the instructions take Santa?
 
-Bonus
-=====
+Part Two
+========
 
 Now, given the same instructions, find the position of the first character that
 causes him to enter the basement (floor -1). The first character in the
