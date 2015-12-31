@@ -16,6 +16,7 @@ def find_suffix(length):
             print('For length %d, the lowest suffix is: %d.' % (length, suffix))
             return
 
+
 def main():
     find_suffix(5)
     find_suffix(6)
