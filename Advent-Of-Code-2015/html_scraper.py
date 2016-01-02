@@ -47,5 +47,9 @@ for row in d('article').text().split('\n'):
     else:
         final.extend(wrap(row, margin))
 
-final.append('\nSource: %s\n' % source)
+final.append('')
+final.append('Part Two')
+final.append('========')
+final.append('')
+final.append('Source: %s\n' % source)
 print('\n'.join(final))
