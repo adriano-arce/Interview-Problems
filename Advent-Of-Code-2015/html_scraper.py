@@ -1,7 +1,7 @@
 from pyquery import PyQuery
 from textwrap import wrap
 
-source = 'http://adventofcode.com/day/12'
+source = 'http://adventofcode.com/day/13'
 d = PyQuery(source)
 
 # print('BEFORE:')
@@ -25,6 +25,10 @@ for node in d('ul').items():
 for node in d('h2').items():
     header = node.text()[4:-4]
     node.replace_with(header + '\n' + ('=' * len(header)) + '\n\n')
+
+for node in d('pre').items():
+    content = '\n'.join('    ' + row for row in node.text().split('\n'))
+    node.replace_with(content + '\n')
 
 # print('\n\n\n')
 # print('AFTER:')
