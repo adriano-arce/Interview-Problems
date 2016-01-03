@@ -62,5 +62,6 @@ def main():
     password = find_next_valid(password)
     print('After expiring again, Santa\'s next password is: %s.' % password)
 
+
 if __name__ == '__main__':
     main()

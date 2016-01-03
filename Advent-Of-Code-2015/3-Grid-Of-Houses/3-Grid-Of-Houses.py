@@ -35,5 +35,6 @@ def main():
     next_year_count = len(next_year(directions))
     print('Next year, %d houses will receive a present.' % next_year_count)
 
+
 if __name__ == '__main__':
     main()

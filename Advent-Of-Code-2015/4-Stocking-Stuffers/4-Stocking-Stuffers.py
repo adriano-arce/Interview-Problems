@@ -21,5 +21,6 @@ def main():
     find_suffix(5)
     find_suffix(6)
 
+
 if __name__ == '__main__':
     main()

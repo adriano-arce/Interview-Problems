@@ -50,5 +50,6 @@ def main():
     new_nice_count = sum(new_is_nice(s) for s in strings)
     print('Now, there are %d nice strings.' % new_nice_count)
 
+
 if __name__ == '__main__':
     main()

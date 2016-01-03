@@ -1,18 +1,24 @@
+from abc import ABCMeta, abstractmethod
+
 _gates = {}  # Maps names to gates.
 
 
+def register_constant(arg):
+    if arg.isdigit():
+        _gates[arg] = ConstantGate(arg, arg)
+    return arg
+
+
 class BaseGate(object):
+    __metaclass__ = ABCMeta
+
     def __init__(self, name):
         self.name = name
         self._value = None
 
+    @abstractmethod
     def evaluate(self):
-        raise NotImplementedError()
-
-    def register_constant(self, arg):
-        if arg.isdigit():
-            _gates[arg] = ConstantGate(arg, arg)
-        return arg
+        pass
 
 
 class ConstantGate(BaseGate):
@@ -27,7 +33,7 @@ class ConstantGate(BaseGate):
 class UnaryGate(BaseGate):
     def __init__(self, name, arg):
         super(UnaryGate, self).__init__(name)
-        self.arg = self.register_constant(arg)
+        self.arg = register_constant(arg)
 
 
 class DirectGate(UnaryGate):
@@ -47,8 +53,8 @@ class NotGate(UnaryGate):
 class BinaryGate(BaseGate):
     def __init__(self, name, left, right):
         super(BinaryGate, self).__init__(name)
-        self.left = self.register_constant(left)
-        self.right = self.register_constant(right)
+        self.left = register_constant(left)
+        self.right = register_constant(right)
 
 
 class AndGate(BinaryGate):

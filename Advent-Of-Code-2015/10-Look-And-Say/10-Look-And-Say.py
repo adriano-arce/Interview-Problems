@@ -23,5 +23,6 @@ def main():
         seed = look_and_say(seed)
     print('After 50 iterations, the result has length %s.' % len(seed))
 
+
 if __name__ == '__main__':
     main()

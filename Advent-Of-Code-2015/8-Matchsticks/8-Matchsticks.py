@@ -1,5 +1,5 @@
 from ast import literal_eval  # The inverse repr function.
-import re  # Useful for chomping.
+# import re  # Useful for chomping.
 
 
 def inv_repr(s):
@@ -47,6 +47,7 @@ def main():
 
     diff = sum(len(encode(row)) - len(row) for row in rows)
     print('Encoded minus original is: %d.' % diff)
+
 
 if __name__ == '__main__':
     main()

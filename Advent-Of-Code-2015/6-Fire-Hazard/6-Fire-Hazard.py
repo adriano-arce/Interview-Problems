@@ -3,7 +3,7 @@ import re
 
 def mistranslated(rules):
     rule_regex = re.compile(r'(.+) (\d+),(\d+) through (\d+),(\d+)')
-    grid = [[False] * 1000 for i in range(1000)]
+    grid = [[False] * 1000 for _ in range(1000)]
     for rule in rules:
         match = rule_regex.search(rule)
         action, x1, y1, x2, y2 = match.groups()
@@ -21,7 +21,7 @@ def mistranslated(rules):
 
 def translated(rules):
     rule_regex = re.compile(r'(.+) (\d+),(\d+) through (\d+),(\d+)')
-    grid = [[0] * 1000 for i in range(1000)]
+    grid = [[0] * 1000 for _ in range(1000)]
     for rule in rules:
         match = rule_regex.search(rule)
         action, x1, y1, x2, y2 = match.groups()
@@ -36,12 +36,14 @@ def translated(rules):
 
     print('The total brightness is %d.' % sum(sum(row) for row in grid))
 
+
 def main():
     with open('input.txt', 'r') as f:
         rules = f.read().split('\n')
 
     mistranslated(rules)
     translated(rules)
+
 
 if __name__ == '__main__':
     main()

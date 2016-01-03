@@ -15,5 +15,6 @@ def main():
     print('Santa arrived at floor %d.' % floor)
     print('Santa first entered the basement at position %d.' % position)
 
+
 if __name__ == '__main__':
     main()
