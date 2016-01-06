@@ -23,5 +23,6 @@ def main():
     print('There are %d ways to fit all the eggnog.' % total_count)
     print('There are %d ways with min length (%d).' % (min_count, min_len))
 
+
 if __name__ == '__main__':
     main()
