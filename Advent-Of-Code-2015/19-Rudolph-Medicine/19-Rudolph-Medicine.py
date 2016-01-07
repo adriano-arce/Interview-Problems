@@ -1,6 +1,3 @@
-from collections import deque
-
-
 def neighbours(base, replacements):
     molecules = set()
     for before, after in replacements:
@@ -9,7 +6,7 @@ def neighbours(base, replacements):
                 base_chars = list(base)
                 base_chars[i : i + len(before)] = list(after)
                 molecules.add(''.join(base_chars))
-    return molecules
+    return sorted(molecules)  # Makes the running time more consistent.
 
 
 def main():
@@ -25,41 +22,19 @@ def main():
     molecules = neighbours(target, replacements)
     print('There are %d possible molecules.' % len(molecules))
 
-    # --------------------------------------------------------------------------
-    # This uses a brute force BFS, but took too long.
-    # --------------------------------------------------------------------------
-    # start = 'e'
-    # frontier = deque([(start, 0)])
-    # found_target = False
-    # i = 0
-    # while frontier and not found_target:
-    #     curr, dist = frontier.popleft()
-    #     for neighbour in neighbours(curr, replacements):
-    #         if i % 10000 == 0:
-    #             print(i, neighbour, dist + 1)
-    #         frontier.append((neighbour, dist + 1))
-    #         if neighbour == target:
-    #             found_target = True
-    #         i += 1
-
-    # --------------------------------------------------------------------------
-    # This uses a brute force DFS in reverse, and happens to work quickly.
-    # --------------------------------------------------------------------------
     start, target = target, 'e'
     for i in range(len(replacements)):
         before, after = replacements[i]
         replacements[i] = after, before
 
-    frontier = deque([(start, 0)])
+    frontier = [(start, 0)]
     steps = 0
-    i = 0
     while frontier and not steps:
         curr, dist = frontier.pop()
         for neighbour in neighbours(curr, replacements):
             frontier.append((neighbour, dist + 1))
-            if neighbour == target:  # Hopefully this is the fastest.
+            if neighbour == target:  # Hopefully this path was unique.
                 steps = dist + 1
-            i += 1
 
     print('The target can be reached in %d replacements.' % steps)
 
