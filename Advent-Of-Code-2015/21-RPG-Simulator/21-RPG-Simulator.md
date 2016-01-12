@@ -65,4 +65,10 @@ What is the least amount of gold you can spend and still win the fight?
 Part Two
 ========
 
+Turns out the shopkeeper is working with the boss, and can persuade you to buy
+whatever items he wants. The other rules still apply, and he still only has one
+of each item.
+
+What is the most amount of gold you can spend and still lose the fight?
+
 Source: http://adventofcode.com/day/21
