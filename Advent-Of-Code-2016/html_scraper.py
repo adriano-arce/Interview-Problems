@@ -1,7 +1,7 @@
 from pyquery import PyQuery
 from textwrap import wrap
 
-source = 'http://adventofcode.com/2016/day/8'
+source = 'http://adventofcode.com/2016/day/10'
 
 d = PyQuery(source)
 
